@@ -1,0 +1,20 @@
+---
+---
+
+@import "colors";
+@import "fonts";
+
+@import "nav";
+@import "hero";
+@import "footer";
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}

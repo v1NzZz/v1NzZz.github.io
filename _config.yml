@@ -1,0 +1,12 @@
+title: Cyber Athlete
+short_title: cyA
+description: Site officiel de la structure Esports Cyber Athlete
+logo: /img/logo_cyA.svg
+social:
+  twitter: cyA_Esport
+baseurl:
+domain: cya.fr
+permalink: "/:path/"
+sass:
+  sass_dir: _sass
+  style: compressed

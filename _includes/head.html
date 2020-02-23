@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+
+  <title>{{ page.title }} - {{ site.title }}</title>
+
+  <!-- Search Engine -->
+  <meta name="description" content="{{ page.description | default: site.description}}">
+  <meta name="image" content="{{ site.logo | absolute_url }}" />
+
+  <!-- Schema.org for Google  -->
+  <meta itemProp="name" content="{{ page.title | default: site.title }}" />
+  <meta itemProp="description" content="{{ page.description | default: site.title }}" />
+  <meta itemProp="image" content="{{ site.logo | absolute_url }}" />
+
+  <!-- Twitter -->
+  <meta name="twitter:image" content="{{ site.logo | absolute_url }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}" />
+  <meta name="twitter:site" content="@{{ site.social.twitter }}" />
+  <meta name="twitter:image:src" content="{{ site.logo | absolute_url }}" />
+
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="{{ page.title | default: site.title }}" />
+  <meta name="og:description" content="{{ page.description | default: site.description }}" />
+  <meta name="og:image" content="{{ site.logo | absolute_url }}" />
+  <meta name="og:url" content="https://{{ site.domain }}" />
+  <meta name="og:site_name" content="{{ site.domain }}" />
+  <meta name="og:locale" content="fr_FR" />
+  <meta name="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}" />
+</head>
+
+
+
+
+
+
+
+
