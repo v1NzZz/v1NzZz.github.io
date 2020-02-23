@@ -1,5 +1,59 @@
 @font-face {
-  font-family: bit;
-  src: url("../fonts/madness.ttf");
-  font-weight: bold;
+  font-family: "Vision Regular";
+  src: url("../fonts/vision/regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Regular Italic";
+  src: url("../fonts/vision/regular-italic.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Black";
+  src: url("../fonts/vision/black.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Black Italic";
+  src: url("../fonts/vision/black-italic.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Bold";
+  src: url("../fonts/vision/bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Bold Italic";
+  src: url("../fonts/vision/bold-italic.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Heavy";
+  src: url("../fonts/vision/heavy.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Heavy Italic";
+  src: url("../fonts/vision/heavy-Italic.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Light";
+  src: url("../fonts/vision/light.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Light Italic";
+  src: url("../fonts/vision/light.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Thin";
+  src: url("../fonts/vision/thin.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Vision Thin Italic";
+  src: url("../fonts/vision/thin-italic.woff2") format('woff2');
 }
