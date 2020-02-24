@@ -7,6 +7,10 @@ social:
 baseurl:
 domain: cya.fr
 permalink: "/:path/"
+collections:
+  staff:
+    people: true
+    output: true
 sass:
   sass_dir: _sass
   style: compressed
