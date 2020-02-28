@@ -1,0 +1,12 @@
+<div id="twitch-embed"></div>
+
+<script type="text/javascript">
+  const width = window.innerWidth
+  const height = window.innerHeight
+  new Twitch.Embed("twitch-embed", {
+    width: window.innerWidth,
+    height: window.innerHeight - 131, // header 76px + footer 55px
+    allowfullscreen: true,
+    channel: "{{ site.social.twitch }}"
+  });
+</script>

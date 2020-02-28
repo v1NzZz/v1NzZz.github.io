@@ -4,6 +4,7 @@ description: Site officiel de la structure Esports Cyber Athlete
 logo: /img/logo_cyA.svg
 social:
   twitter: cyA_Esport
+  twitch: cya_esport
 baseurl:
 domain: cya.fr
 permalink: "/:path/"
@@ -13,6 +14,8 @@ collections:
     output: true
 navigation:
   menu:
+  - name: Twitch
+    url: '/twitch'
   - name: À propos
     url: '/about'
     sass:
