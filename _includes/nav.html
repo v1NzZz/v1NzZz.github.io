@@ -1,0 +1,34 @@
+<header class="site-header">
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <a href='/'>
+        <img src="{{ site.logo | absolute_url }}" />
+      </a>
+    </div>
+
+    <div class="nav-bar">
+      <div class="nav-menu">
+        <ul>
+          {% for link in site.navigation %}
+          <li>
+            <a href="{{ link.url }}">{{ link.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="hamburger-menu close">
+        <div class="icon" onClick="toggleMenu(this)">
+          <i data-feather="menu" width="40" height="40"></i>
+        </div>
+        <ul>
+          {% for link in site.navigation %}
+            <li>
+              <a href="{{ link.url }}">{{ link.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

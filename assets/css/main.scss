@@ -3,8 +3,10 @@
 
 @import "fonts";
 @import "typography";
+@import "link";
 @import "colors";
 
+@import "nav";
 @import "hero";
 @import "footer";
 
@@ -22,9 +24,8 @@ body {
   overflow: auto;
 }
 
-a,
-button {
-  cursor: pointer;
+main {
+  flex: 1;
 }
 
 main {

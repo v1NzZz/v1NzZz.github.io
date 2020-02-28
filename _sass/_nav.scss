@@ -1,0 +1,95 @@
+@import "colors";
+
+$nav-height: 76px;
+
+.site-header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $nav-height;
+  padding: 0.4em 1em;
+  background-color: #fff;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-family: "Vision Heavy";
+        font-size: 1.2em;
+        margin: 0 1em;
+
+        &:hover {
+          border-bottom: 4px solid $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media(min-width: 700px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+   display: block;
+
+    .icon {
+      display: flex;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    ul {
+       z-index: -1;
+       position: absolute;
+       display: grid;
+       grid-row-gap: 5px;
+       grid-auto-columns: max-content;
+       width: 100%;
+       right: 0;
+       padding: 2em 1em;
+       background-color: #fff;
+       transition: 0.5s ease-out;
+    }
+
+   &.open {
+     ul {
+       top: $nav-height;
+       box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+     }
+   }
+
+
+   &.close {
+     ul {
+       top: -200px;
+       box-shadow: none;
+     }
+   }
+  }
+}
+
+.nav-logo, img {
+  height: 100%;
+}
