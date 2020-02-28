@@ -12,8 +12,9 @@ collections:
     people: true
     output: true
 navigation:
-  - name: "À propos"
-    url: "/about"
-sass:
+  menu:
+  - name: À propos
+    url: '/about'
+    sass:
   sass_dir: _sass
   style: compressed

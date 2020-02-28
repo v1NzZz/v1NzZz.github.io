@@ -9,7 +9,7 @@
     <div class="nav-bar">
       <div class="nav-menu">
         <ul>
-          {% for link in site.navigation %}
+          {% for link in site.navigation.menu %}
           <li>
             <a href="{{ link.url }}">{{ link.name }}</a>
           </li>
@@ -22,7 +22,7 @@
           <i data-feather="menu" width="40" height="40"></i>
         </div>
         <ul>
-          {% for link in site.navigation %}
+          {% for link in site.navigation.menu %}
             <li>
               <a href="{{ link.url }}">{{ link.name }}</a>
             </li>

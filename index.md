@@ -1,5 +1,5 @@
 ---
-title: Cyber Athlete
+title: Accueil
 hero_image: "/img/logo_cyA.svg"
 layout: landing-page
 heading: Cyber Athlete
