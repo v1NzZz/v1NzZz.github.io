@@ -1,29 +1,11 @@
 <div class="hero-container">
+  <h1 class="title uppercase">{{ page.heading }}</h1>
+  <img src="{{ site.logo | absolute_path }}" />
 
-  <div class="centered-logo">
-
-    <div class="glitch"
-      style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      <div class="glitch__img"
-        style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      </div>
-      <div class="glitch__img"
-        style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      </div>
-      <div class="glitch__img"
-        style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      </div>
-      <div class="glitch__img"
-        style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      </div>
-      <div class="glitch__img"
-        style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      </div>
-      <div class="glitch__img"
-        style="background-image: url('{{ page.hero_image | absolute_url }}');">
-      </div>
-    </div>
-
-    <h1>Coming soon<span>.</span></h1>
+  <div class="quote">
+    <h2 id="first-part" class="subtitle citation">{{ page.citation_part1}}</h2>
+    <h2 id="second-part" class="subtitle citation">
+      <span>. {{ page.citation_part2}}</span>
+    </h2>
   </div>
 </div>

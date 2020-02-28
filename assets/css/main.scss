@@ -28,6 +28,12 @@ main {
   flex: 1;
 }
 
-main {
-  flex: 1;
+section {
+  padding: 1em 2em;
+}
+
+section {
+  p {
+    white-space: pre-line;
+  }
 }

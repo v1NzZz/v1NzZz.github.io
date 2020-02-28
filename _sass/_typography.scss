@@ -1,9 +1,12 @@
+@import "colors";
+
 body {
-  font-family: "Vision Regular", Arial, sans-serif;
+  font-family: "Vision Light";
   font-size: 16px;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $primary-color;
 }
 
 h1,
@@ -12,7 +15,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Vision Heavy", "Trebuchet MS", sans-serif;
+  font-family: "Vision Black";
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
 }
 
 h1:first-child,
@@ -57,4 +64,12 @@ b {
 
 i {
   font-family: "Vision Regular Italic";
+}
+
+.title {
+  font-size: -webkit-xxx-large;
+}
+
+.subtitle {
+  font-family: "Vision Thin Italic";
 }
