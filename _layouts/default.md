@@ -10,7 +10,19 @@
   {% include nav.html %}
 
   <main>
-  {{ content }}
+    <div class="top-angled-background">
+      <div class="background">
+        {% if page.angled_header %}
+          <div class="angled-header">
+            <h1>{{ page.angled_header }}</h1>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="main-container">
+      {{ content }}
+    </div>
   </main>
 
   {% include footer.html %}

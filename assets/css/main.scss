@@ -8,6 +8,7 @@
 @import "media-queries";
 
 @import "nav";
+@import "angled-background";
 @import "hero";
 @import "footer";
 
@@ -28,6 +29,12 @@ body {
 
 main {
   flex: 1;
+
+  .main-container {
+    position: relative;
+    top: $angled-background-height;
+    margin: 6em 0;
+  }
 }
 
 section {
@@ -38,4 +45,24 @@ section {
   p {
     white-space: pre-line;
   }
+}
+
+.angled-header {
+  position: relative;
+  height: 150%;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    position: relative;
+    transform: skewY(-1deg);
+    font-size: calc(4.8em + 1vw);
+    color: #fff;
+    margin: 0;
+    margin-left: 0.5em;
+  }
+}
+
+.container {
+  padding: 2em 3em;
 }

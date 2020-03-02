@@ -1,6 +1,9 @@
+@import "angled-background";
+@import "nav";
+
 #twitch-embed {
   position: absolute;
+  top: #{$angled-background-height + $nav-height};
   display: flex;
   justify-content: center;
-  background: #000;
 }

@@ -4,8 +4,8 @@
   const width = window.innerWidth
   const height = window.innerHeight
   new Twitch.Embed("twitch-embed", {
-    width: window.innerWidth,
-    height: window.innerHeight - 131, // header 76px + footer 55px
+    width: window.innerWidth + 2,
+    height: window.innerHeight - 126, // header 76px + footer 50px
     allowfullscreen: true,
     channel: "{{ site.social.twitch }}"
   });

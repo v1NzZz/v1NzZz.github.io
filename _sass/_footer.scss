@@ -1,7 +1,26 @@
 @import "colors";
 
+$footer-height: 50px;
+
 footer {
   text-align: center;
   color: #fff;
   background: $linear-gradient;
+  height: $footer-height;
+
+  .copyright {
+    position: relative;
+    top: calc(#{$footer-height} / -2);
+  }
+
+  .angled-background {
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    bottom: 15px;
+    height: 35px;
+    transform: rotate(1deg);
+    background: $linear-gradient;
+    box-shadow: $box-shadow;
+  }
 }
