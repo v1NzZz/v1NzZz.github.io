@@ -3,7 +3,7 @@
 
 #twitch-embed {
   position: absolute;
-  top: #{$angled-background-height + $nav-height};
+  top: $angled-background-height - 16px;
   display: flex;
   justify-content: center;
 }
