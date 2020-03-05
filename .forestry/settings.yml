@@ -9,9 +9,11 @@ sections:
   create: all
 - type: directory
   path: _staff_members
-  label: Staff members
+  label: Membres du staff
   create: all
   match: "**/*"
+  templates:
+  - staff_member
 - type: jekyll-pages
   label: Pages
   create: all
