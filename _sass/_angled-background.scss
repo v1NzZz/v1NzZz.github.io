@@ -15,3 +15,19 @@ $angled-background-height: -200px;
     box-shadow: $box-shadow;
   }
 }
+
+.angled-header {
+  position: relative;
+  height: 150%;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    position: relative;
+    transform: skewY(-1deg);
+    font-size: calc(4.8em + 1vw);
+    color: #fff;
+    margin: 0;
+    margin-left: 0.5em;
+  }
+}

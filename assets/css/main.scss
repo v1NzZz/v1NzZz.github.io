@@ -8,6 +8,7 @@
 @import "media-queries";
 
 @import "nav";
+@import "section";
 @import "angled-background";
 @import "hero";
 @import "footer";
@@ -37,32 +38,27 @@ main {
   }
 }
 
-section {
-  padding: 1em 2em;
-}
-
-section {
-  p {
-    white-space: pre-line;
-  }
-}
-
-.angled-header {
-  position: relative;
-  height: 150%;
-  display: flex;
-  align-items: center;
-
-  h1 {
-    position: relative;
-    transform: skewY(-1deg);
-    font-size: calc(4.8em + 1vw);
-    color: #fff;
-    margin: 0;
-    margin-left: 0.5em;
-  }
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+  grid-gap: 1em 5em;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .container {
-  padding: 2em 3em;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: $mobile) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    width: 100%;
+  }
 }

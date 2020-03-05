@@ -20,6 +20,10 @@ h6 {
   &.uppercase {
     text-transform: uppercase;
   }
+
+  &.underlined {
+    border-bottom: 2px solid #fff;
+  }
 }
 
 h1:first-child,
@@ -28,11 +32,21 @@ h3:first-child,
 h4:first-child,
 h5:first-child,
 h6:first-child {
+  margin-bottom: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
   margin-top: 0;
 }
 
+
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.125em;
 }
 
@@ -60,6 +74,7 @@ h6 {
 
 b {
   font-family: "Vision Bold";
+  color: $mixed-color;
 }
 
 i {
@@ -68,6 +83,10 @@ i {
 
 .title {
   font-size: -webkit-xxx-large;
+}
+
+.centered {
+  text-align: center;
 }
 
 .subtitle {

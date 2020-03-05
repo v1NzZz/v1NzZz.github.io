@@ -7,11 +7,26 @@
 	flex-direction: column;
 	text-align: center;
 	margin: 4em 0;
-	padding: 0 4em;
+  padding: 0 4em;
+
+  h1 {
+    background: $linear-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .hero-container img {
 	width: 30%;
+}
+
+.quote {
+  margin: 1em 0;
+
+  & > * {
+    margin: 0;
+  }
 }
 
 .citation {
