@@ -22,6 +22,6 @@ navigation:
     url: '/staff'
   - name: À propos
     url: '/about'
-    sass:
+sass:
   sass_dir: _sass
   style: compressed
