@@ -1,0 +1,51 @@
+---
+label: staff_member
+hide_body: false
+fields:
+- type: text
+  name: firstname
+  label: firstname
+- type: text
+  name: lastname
+  label: lastname
+- type: text
+  name: nickname
+  label: nickname
+- type: text
+  name: role
+  label: role
+- type: text
+  name: pic
+  label: pic
+- type: text
+  name: resume
+  label: resume
+- type: field_group_list
+  name: social
+  label: social
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: url
+    label: url
+- type: text
+  name: layout
+  label: layout
+- type: number
+  name: position
+  label: position
+- type: field_group_list
+  name: competitions
+  label: competitions
+  fields:
+  - type: number
+    name: rank
+    label: rank
+  - type: text
+    name: name
+    label: name
+  - type: number
+    name: year
+    label: year
