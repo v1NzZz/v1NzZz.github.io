@@ -1,6 +1,7 @@
 ---
 label: Membre du staff
-hide_body: false
+hide_body: true
+display_field: nickname
 fields:
 - type: text
   name: firstname
