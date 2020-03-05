@@ -22,6 +22,8 @@ navigation:
     url: '/staff'
   - name: À propos
     url: '/about'
+contact:
+  email: cyberathlete.esport@gmail.com
 sass:
   sass_dir: _sass
   style: compressed
