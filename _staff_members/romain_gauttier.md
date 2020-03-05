@@ -2,12 +2,13 @@
 firstname: Romain
 lastname: Gauttier
 nickname: LoKwi
-position: Community manager
+role: Community manager
 pic:
 social:
   - title: twitter
     url: https://twitter.com/LoKwi
-layout: "staff"
+layout: "staff_member"
+position: 4
 ---
 <p>
   Romain GAUTTIER, j'ai 20 ans, actuellement étudiant à l'ISEFAC Bachelor en 3e année dans une section esport et gaming. J'ai commencé à travailler dans l'esport à travers le bénévolat. En tant que  membre de l'équipe organisatrice, j'ai donc pris part à la mise en place et au bon déroulement des trois éditions  de la Maximus CUP, mais aussi de la WaveLan et de la Corsair Dreamhack Marseille 2018.

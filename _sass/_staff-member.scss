@@ -1,0 +1,26 @@
+.staff-member {
+  display: flex;
+  flex-direction: column;
+
+  .member-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: -10em;
+
+    h1 {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  img {
+    width: 300px;
+    margin: 0 1em;
+  }
+}

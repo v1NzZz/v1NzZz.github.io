@@ -1,0 +1,25 @@
+<div id="staff" class="container">
+  <div class="staff-members grid-auto-fit">
+    {% assign member_by_position = site.staff_members | sort: "position" %}
+    {% for member in member_by_position %}
+    <div class="member">
+      <a href="{{ member.url }}">
+        <div>{{ member.firstname }} {{ member.lastname }}</div>
+        <div><b><i>“ {{ member.nickname }} ”</i></b></div>
+        <img class="member-pic" src="{{ member.pic | default: site.default_user }}" />
+        <div>
+          <div><b>{{ member.role }}</b></div>
+          <div><i>{{ member.resume }}</i></div>
+        </div>
+      </a>
+
+
+      <div class="social">
+        {% for social in member.social %}
+          <a href="{{ social.url }}"><i data-feather="{{ social.title }}"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

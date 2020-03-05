@@ -2,17 +2,18 @@
 firstname: Vincent
 lastname: Provost
 nickname: v1NzZz
-position: Directeur et coach
+role: Fondateur et Coach
 pic:
-resume: Créateur et Coach de @cyA_eSport, Professeur pour @MontpellierGA.
+resume: Professeur à la Montpellier Gaming Académie
 social:
   - title: twitter
     url: https://twitter.com/v1NzZz_Wayne
-  - title: instagram
-    url: https://www.instagram.com/coach_v1nzzz/?hl=fr
   - title: twitch
     url: https://www.twitch.tv/v1nzzzoo
-layout: "staff"
+  - title: instagram
+    url: https://www.instagram.com/coach_v1nzzz/?hl=fr
+layout: "staff_member"
+position: 1
 ---
 <p>
   Provost "v1NzZz" Vincent , 28 ans, coach professionnel Fortnite. Mon expérience dans l’univers du e-gaming débute par 10 années en tant que joueur Pro Series sur « Counter-Strike-Source ».

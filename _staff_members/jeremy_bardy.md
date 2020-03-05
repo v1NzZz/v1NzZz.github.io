@@ -2,15 +2,16 @@
 firstname: Jérémy
 lastname: Bardy
 nickname: Nexity
-position: Coach
+role: Coach/Analyste
 pic:
-resume: Fondateur de @DrawNite - Ancien joueur semi pro sur CS 1.6 - Coach/Analyste pour @cyA_eSport
+resume: Ancien joueur semi pro sur CS 1.6
 social:
   - title: twitter
     url: https://twitter.com/DrawNiteNexity
   - title: twitch
     url: https://www.twitch.tv/drawnite
-layout: "staff"
+layout: "staff_member"
+position: 3
 ---
 <p>
   Je m’appelle Jeremy Bardy Alias 'Nexity', j'ai 25 ans. J'ai fais mes études à Montpellier, dans le domaine du Management pour ensuite passer Chef d’équipe chez la marque de sport Asics. Je pratique le sport électronique (esport) depuis l'âge de 13 ans. Jeunes, mes parents ont tout de suite compris cette passion que j'avais pour les jeux vidéos et notamment la compétition. J'ai pu participer à une vingtaine de compétitions hors ligne partout en France à un très bon niveau. J'ai également représenté des structures durant des saisons entières avant de changer de jeu et passer sur Fortnite.

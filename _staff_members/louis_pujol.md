@@ -2,12 +2,13 @@
 firstname: Louis
 lastname: Pujol
 nickname: Otterside
-position: Manager
+role: Manager
 pic:
 social:
   - title: twitter
     url: https://twitter.com/Ottersiide
-layout: "staff"
+layout: "staff_member"
+position: 6
 ---
 <p>
   Je m’appelle Louis PUJOL, j’ai 25 ans. Durant mes études de droit à la faculté de Montpellier j’ai fais partie d’une équipe compétitive sur « Heroes of the Storm » dont j’étais le capitaine. Ayant un grand amour pour le droit public et les institutions françaises, j’ai décidé d’allier droit, relationnel et esport. Je veux apporter à l’esport ce qui lui fait le plus défaut : Les Cadres (juridiques et administratifs).

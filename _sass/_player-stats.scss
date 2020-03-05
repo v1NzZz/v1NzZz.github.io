@@ -1,0 +1,38 @@
+.player-stats {
+  .stat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .value {
+      font-size: 72px;
+      font-weight: 900;
+      margin: 0.4em;
+      color: $secondary-color;
+    }
+
+    .label {
+      font-size: x-large;
+      margin: 0.2em;
+      color: $primary-color;
+    }
+  }
+
+  .grid-auto-fit {
+    align-items: center;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .competitions {
+    margin-top: 4em;
+  }
+
+  .competitions-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

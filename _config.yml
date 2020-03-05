@@ -2,6 +2,7 @@ title: Cyber Athlete
 short_title: cyA
 description: Site officiel de la structure Esports Cyber Athlete
 logo: /img/logo_cyA.svg
+default_user: /img/gamer_avatar.png
 social:
   twitter: cyA_Esport
   twitch: cya_esport
@@ -9,13 +10,16 @@ baseurl:
 domain: cya.fr
 permalink: "/:path/"
 collections:
-  staff:
+  staff_members:
     people: true
     output: true
+    permalink: /staff/:name
 navigation:
   menu:
   - name: Twitch
     url: '/twitch'
+  - name: Staff
+    url: '/staff'
   - name: À propos
     url: '/about'
     sass:

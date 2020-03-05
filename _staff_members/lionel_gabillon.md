@@ -2,10 +2,11 @@
 firstname: Lionel
 lastname: Gabillon
 nickname: Boyington
-position: Responsable marketing
+role: Responsable marketing
 pic:
 social:
-layout: "staff"
+layout: "staff_member"
+position: 5
 ---
 <p>
   Lionel GABILLON, âgé de 43 ans. Joueur de jeux vidéo de la première heure, j’ai acheté toutes les playstation, même la première. J’ai même jouer sur Commodore. Au delà de mon expérience, je mange la vie à 300%.

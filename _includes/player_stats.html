@@ -1,0 +1,61 @@
+{% assign competitionNb = page.competitions.size %}
+
+{% if page.competitions %}
+{% assign competitionNames = page.competitions | map: "name" %}
+{% assign rank1 = page.competitions | where: "rank", 1 %}
+{% assign rank2 = page.competitions | where: "rank", 2 %}
+{% assign rank3 = page.competitions | where: "rank", 3 %}
+{% assign ranked = rank1.size | plus: rank2.size | plus: rank3.size %}
+{% assign sortedCompetition = page.competitions | sort: "year" %}
+{% assign firstYear = sortedCompetition | map: "year" | first %}
+{% assign lastYear = sortedCompetition | map: "year" | last %}
+{% assign xpTime = lastYear | minus: firstYear %}
+{% endif %}
+
+<div class="container player-stats">
+  <div class="grid-auto-fit">
+    {% if xpTime >= layout.years %}
+      <div class="stat">
+        <div class="value">{{ xpTime }}ans</div>
+        <div class="label">d’expérience dans l’eSport</div>
+      </div>
+    {% endif %}
+
+    {% if competitionNb > 0 %}
+      <div class="stat">
+        <div class="value">{{ competitionNb }}</div>
+        <div class="label">Compétitons</div>
+      </div>
+    {% endif %}
+
+    {% if ranked > 0 %}
+      <div class="stat">
+        <div class="value">{{ ranked }}</div>
+        <div class="label">Podiums</div>
+      </div>
+    {% endif %}
+
+    <div class="stat">
+      <div class="value">{{ rank1.size }}</div>
+      <img src="/img/gold-trophy.svg" />
+    </div>
+    <div class="stat">
+      <div class="value">{{ rank2.size }}</div>
+      <img src="/img/silver-trophy.svg" />
+    </div>
+    <div class="stat">
+      <div class="value">{{ rank3.size }}</div>
+      <img src="/img/bronze-trophy.svg" />
+    </div>
+
+
+  </div>
+
+  <div class="competitions centered">
+    <h4>Liste des compétitons</h4>
+    <div class="competitions-list">
+      <b>{{ competitionNames | join: " • " }}</b>
+    </div>
+  </div>
+
+</div>

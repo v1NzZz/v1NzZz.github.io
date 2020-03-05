@@ -1,0 +1,13 @@
+<div class="container staff-member">
+  <div class="member-header">
+    <img class="member-pic" src="{{ page.pic | default: site.default_user }}" />
+    <div>
+      <h1 class="uppercase">{{ page.firstname }} {{ page.lastname }}</h1>
+      <h2><i>“ {{ page.nickname }} ”</i></h2>
+    </div>
+  </div>
+</div>
+
+<section class="angled divider mixed">
+  {{ page.content | mardownify }}
+</section>
