@@ -12,6 +12,7 @@
 @import "angled-background";
 @import "hero";
 @import "footer";
+@import "not-found";
 
 @import "twitch";
 @import "staff";
@@ -39,6 +40,7 @@ main {
     position: relative;
     top: $angled-background-height;
     margin: 6em 0 -6em 0;
+    height: calc(100% - #{abs($angled-background-height - $footer-height)});
   }
 }
 
