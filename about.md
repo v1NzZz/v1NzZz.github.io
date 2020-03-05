@@ -1,5 +1,7 @@
 ---
 layout: default
+title: À propos
+angled_header: À propos
 story_title: "Notre histoire"
 story: |+
   Le projet cyber athlète à vue le jour le 24 juillet 2019, ayant pour objectif de créer un collectif de joueurs répondant à divers critères. Le concept est d’assembler différents joueurs partageant les mêmes aspirations, ainsi qu’une mentalité compatible de manière à s’entraider lors d’entraînements collectifs. En d’autres mots, il s’agit de mettre en place, de manière concrète et structurée, des entraînements semblables aux organisations existantes dans le sport traditionnel. Notre but premier, est de gagner la confiance des joueurs. C’était la condition ​sine qua non ​ avant de lancer notre structure. C'est pour cela que nous avons lancé notre projet concrètement en janvier, car nous avons réussi à avoir la confiance de tous les joueurs. Nous avons prouvé qu'avec cet encadrement et la volonté de travail les joueurs pourraient réussir.
@@ -17,29 +19,28 @@ colors_story: |+
   Le blanc est omniprésent, il représente la myéline. Cette substance se retrouve dans le cerveau protège, et sert à la propagation nerveuse de l’information pour les neurones.
   Ensemble les 3 couleurs représentent à la perfection les membres de cyA. Ils sont débordant de passion, de dynamisme au coeur de l’action, tout en laissant place à leurs réflexions. Le tout, lié par la myéline, accélérateur d’information.
 ---
-<div>
-
+<div class="container">
 <section>
-  <h2>{{ page.story_title }}</h2>
-  <p>
-    {{ page.story }}
-  </p>
-</section>
+    <h2>{{ page.story_title }}</h2>
+    <p>
+      {{ page.story }}
+    </p>
+  </section>
 
-<section>
-  <h2>{{ page.logo_title }}</h2>
-  <p>
-    {{ page.logo_story}}
-  </p>
-</section>
+  <section>
+    <h2>{{ page.logo_title }}</h2>
+    <p>
+      {{ page.logo_story}}
+    </p>
+  </section>
 
-<section>
-  <div>
-    <h2>{{ page.colors_title }}</h2>
-    {% for p in page.colors_story %}
-    <p>{{ p }}</p>
-    {% endfor %}
-  </div>
-</section>
+  <section>
+    <div>
+      <h2>{{ page.colors_title }}</h2>
+      {% for p in page.colors_story %}
+      <p>{{ p }}</p>
+      {% endfor %}
+    </div>
+  </section>
 </div>
 
