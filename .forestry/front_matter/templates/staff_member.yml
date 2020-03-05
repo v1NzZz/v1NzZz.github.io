@@ -1,51 +1,74 @@
 ---
-label: staff_member
+label: Membre du staff
 hide_body: false
 fields:
 - type: text
   name: firstname
-  label: firstname
+  label: Prénom
+  config:
+    required: true
 - type: text
   name: lastname
-  label: lastname
+  label: Nom
+  config:
+    required: true
 - type: text
   name: nickname
-  label: nickname
+  label: Pseudo
+  config:
+    required: true
 - type: text
   name: role
-  label: role
+  label: Poste
+  description: 'Exemple: Manager, Coach, Directeur, etc…'
+  config:
+    required: true
 - type: text
   name: pic
-  label: pic
+  label: Photo
+  default: ''
 - type: text
   name: resume
-  label: resume
+  label: Biographie
+  config:
+    required: true
 - type: field_group_list
   name: social
-  label: social
   fields:
   - type: text
     name: title
-    label: title
+    label: Réseau social
+    description: Twitter, FaceBook, Snapchat, …
   - type: text
     name: url
-    label: url
+    label: URL
+  label: Réseaux sociaux
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: number
   name: position
   label: position
+  hidden: true
 - type: field_group_list
   name: competitions
-  label: competitions
   fields:
   - type: number
     name: rank
-    label: rank
+    label: Classement
+    description: La position dans la classement de la compétition
+    config:
+      required: true
   - type: text
     name: name
-    label: name
+    label: Nom de la compétition
+    config:
+      required: true
   - type: number
     name: year
-    label: year
+    label: Année de la compétition
+    config:
+      required: true
+  label: Compétitions
+  description: La liste des compétions auxquelles la personne a participé.
